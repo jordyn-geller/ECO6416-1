@@ -58,7 +58,7 @@ newPrediction <- data.frame(PopUSA = 300)
 predict(model_1,
         newdata = newPrediction,
         interval = "confidence",
-        level = .8)
+        level = .95)
 ```
 
 ## Thing 2
@@ -84,6 +84,8 @@ abline(lm(FirstClVol ~ Time, data = mail),lty = 2, col = "red")
 ts_model <- lm(FirstClVol ~ Time, data = mail)
 
 summary(ts_model)
+
+cor(mail$FirstClVol, mail$Time)
 ```
 
 ## Thing 1
@@ -92,6 +94,7 @@ summary(ts_model)
 newForecast <- data.frame(Time = 62)
 
 predict(ts_model,newdata = newForecast)
+
 ```
 
 

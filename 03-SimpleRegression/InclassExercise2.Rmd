@@ -53,7 +53,7 @@ in this case, the share of wealth held by the top 1% is increasing by 0.05% each
 Suppose we want to predict the share of wealth 2 quarters form now:
 
 ```{r}
-newForecast <- data.frame(TimeCounter = max(Wealth1percent$TimeCounter) + 2)
+newForecast <- data.frame(TimeCounter = max(Wealth1percent$TimeCounter) + 12)
 
 predict(ts_model, newdata = newForecast)
 ```
