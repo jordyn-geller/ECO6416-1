@@ -74,3 +74,6 @@ sum(people$Strat_2_GainLoss)
 ```
 
 `r sum(people$Strat_2_GainLoss)`. Much better result. What other things can we do to get higher winnings?
+
+- add an age variable
+- add gender variable
